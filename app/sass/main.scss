@@ -2,6 +2,9 @@ $white: #fff;
 $black: #000;
 $grey: #989898;
 $main-color: #8D0BA0;
+$green: #17843a;
+$yellow: #F4D33B;
+$blue: #2C97DE;
 
 $font-size: 16px;
 
@@ -32,11 +35,14 @@ a:focus {
   text-decoration: none;
 }
 
+.bg-image {
+	background: url('../img/header.jpg') 50% 50% no-repeat;
+	background-size: cover;
+}
+
 .section-1 {
 	background: radial-gradient(rgba(0,0,0,.2), rgba(0,0,0,.7)),
-				url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHUlEQVQIW2NkwAIY8Qr6MfjVb2LY1AhShF8lsjEAlxADBl+BNGUAAAAASUVORK5CYII=') repeat,
-				url('../img/header.jpg') 50% 50% no-repeat;
-	// background-size: cover;
+				url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHUlEQVQIW2NkwAIY8Qr6MfjVb2LY1AhShF8lsjEAlxADBl+BNGUAAAAASUVORK5CYII=') repeat;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -105,4 +111,94 @@ a:focus {
 
 .section-2 {
 	padding: 60px 0;
+	background: #F6F8F8;
+
+	h2 {
+		margin-bottom: 60px;
+	}
+}
+
+.product {
+	background: $white;
+	position: relative;
+	border-radius: 3px;
+	overflow: hidden;
+	margin-bottom: 30px;
+	box-shadow: 0 0 15px rgba($black, .1);
+
+	&:hover {
+		// border: 1px solid $blue;
+		h3 {
+			color: $white;
+			background: $blue;			
+		}
+		input[type="submit"] {
+			background: $yellow;
+			border-color: $yellow;
+			text-shadow: 1px 1px 1px $white, 2px 2px 1px rgba($black, .2);
+		}
+	}
+
+	h3 {
+		padding: 7px 10px;
+		line-height: 1.5em;
+		margin: 0 0;
+		transition: .1s;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+	.hover-content {
+
+		table {
+			width: 100%;
+
+			thead {
+
+				th {
+					text-align: center;
+					padding: 5px;
+				}
+			}
+
+			tr {
+
+				&:nth-child(even) {
+					background: darken($white, 3%);
+				}
+
+				td {
+					padding: 3px 14px;
+					color: darken($grey, 10%);
+					font-size: $font-size - 2px;
+					&:last-child {
+						text-align: right;
+					}
+				}
+			}
+
+		}
+	}
+
+	.price {
+		color: $green;
+		font-size: $font-size * 2;
+		font-weight: 500;
+		font-family: 'Museo Sans', sans-serif;
+		text-align: center;
+		padding: 10px 0;
+	}
+
+	input[type="submit"] {
+		border: 1px solid $white;
+		background: $white;
+		padding: 7px 10px;
+		line-height: 1.5em;
+		width: 100%;
+		transition: .1s;
+		font-size: $font-size + 2px;
+	}
 }

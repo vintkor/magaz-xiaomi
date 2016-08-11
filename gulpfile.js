@@ -11,9 +11,9 @@ var gulp        = require('gulp'), // Подключаем Gulp
     imagemin    = require('gulp-imagemin'), // Подключаем библиотеку для работы с изображениями
     pngquant    = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
     cache       = require('gulp-cache'), // Подключаем библиотеку кеширования
-    autoprefixer= require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
-    htmlreplace = require('gulp-html-replace');// Замена "src" в index.html main.js на main.min.js
-    var htmlmin = require('gulp-htmlmin');
+    autoprefixer= require('gulp-autoprefixer'),// Подключаем библиотеку для автоматического добавления префиксов
+    htmlreplace = require('gulp-html-replace'),
+    htmlmin     = require('gulp-htmlmin');
 
 gulp.task('sass', function(){ // Создаем таск Sass
     return gulp.src('app/sass/**/*.scss') // Берем источник
