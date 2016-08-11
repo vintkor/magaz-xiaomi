@@ -10,6 +10,14 @@ $font-size: 16px;
 
 @import "_fonts";
 
+body {
+	overflow-x: hidden;
+}
+
+input {
+	outline: none;
+}
+
 ::selection {
   background: rgba($black, .2);
   color: $black;
@@ -35,30 +43,115 @@ a:focus {
   text-decoration: none;
 }
 
-.bg-image {
-	background: url('../img/header.jpg') 50% 50% no-repeat;
-	background-size: cover;
+.flex-center {
+	display: flex;
+	align-items: center;
 }
 
-.section-1 {
-	background: radial-gradient(rgba(0,0,0,.2), rgba(0,0,0,.7)),
-				url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHUlEQVQIW2NkwAIY8Qr6MfjVb2LY1AhShF8lsjEAlxADBl+BNGUAAAAASUVORK5CYII=') repeat;
+
+.header {
+	background: $blue;
+	box-shadow: 0 0 10px rgba($black, .3);
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+	h1 {
+		margin: 0;
+		color: $white;
+	}
+	.phone {
+		text-align: right;
+			p {
+			margin: 0;
+			line-height: 1.6em;
+			color: $white;
+			font-family: 'Museo Sans Cyrl', sans-serif;
+			font-weight: 100;
+			font-size: $font-size + 2px;
+		}
+	}
+}
+
+.oblako {
+	position: absolute;
+	background: $white;
+	width: 300px;
+	height: 300px;
+	padding: 90px 0 0 53px;
+	top: -80px;
+	right: -80px;
+	z-index: 30;
+	border-radius: 50%;	
+	z-index: 90;
+	transform: rotate(45deg);
+	display: flex;
+	text-align: center;
+	align-items: center;
+	p {
+		color: $blue;
+		font-size: $font-size * 2;
+		position: relative;
+		z-index: 200;
+		font-family: 'Museo Sans Cyrl';
+		font-weight: 700;
+		span {
+			font-size: $font-size * 3;
+			font-family: inherit;
+			font-weight: 900;
+		}
+	}
+}
+
+.bg-image {
+	background: $blue;
+	position: relative;
+	z-index: 20;
+	overflow: hidden;
+	.xiaomi_1 {
+		display: block;
+		position: absolute;
+		bottom: -150px;
+		left: -260px;
+	}
+}
+
+.section-1 {	
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 100vw;
 	height: 100vh;
 
-	h1 {
+	&:after {
+		content: '';
+		background: linear-gradient($blue, rgba(255,255,255,.1));
+		width: 170%;
+		height: 80vh;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 80;
+		transform: rotate(45deg);
+	}
+
+	&:before {
+		content: '';
+		background: linear-gradient(rgba(255,255,255,.1), $blue);
+		width: 200%;
+		height: 80vh;
+		position: absolute;
+		top: 200px;
+		left: -300px;
+		z-index: 80;
+		transform: rotate(-145deg);
+	}
+
+	h2 {
 		position: relative;
 		font-size: $font-size * 6;
 		color: $white;
-		text-shadow: 0 0 15px rgba($black, .9);
-		background: rgba(darken($main-color, 25%), .6);
 		padding: .5em 1em;
-		border: 1px solid rgba($white, .3);
-		border-bottom: 3px solid $white;
-		box-shadow: 0 0 25px rgba($black, .4);
+		border-bottom: 3px solid rgba($white, .6);
 
 		small {
 			color: inherit;
@@ -75,7 +168,7 @@ a:focus {
 			height: 0;
 			border-style: solid;
 			border-width: 10px 10px 0 10px;
-			border-color: $white transparent transparent transparent;
+			border-color: rgba($white, .6) transparent transparent transparent;
 		}
 	}
 
@@ -112,6 +205,7 @@ a:focus {
 .section-2 {
 	padding: 60px 0;
 	background: #F6F8F8;
+	padding-top: 100px;
 
 	h2 {
 		margin-bottom: 60px;
@@ -127,10 +221,9 @@ a:focus {
 	box-shadow: 0 0 15px rgba($black, .1);
 
 	&:hover {
-		// border: 1px solid $blue;
 		h3 {
 			color: $white;
-			background: $blue;			
+			background: $blue;
 		}
 		input[type="submit"] {
 			background: $yellow;
@@ -179,7 +272,6 @@ a:focus {
 					}
 				}
 			}
-
 		}
 	}
 
@@ -187,7 +279,7 @@ a:focus {
 		color: $green;
 		font-size: $font-size * 2;
 		font-weight: 500;
-		font-family: 'Museo Sans', sans-serif;
+		font-family: 'Museo Sans Cyrl', sans-serif;
 		text-align: center;
 		padding: 10px 0;
 	}
@@ -201,4 +293,9 @@ a:focus {
 		transition: .1s;
 		font-size: $font-size + 2px;
 	}
+}
+
+
+#Container .mix{
+    display: none;
 }
