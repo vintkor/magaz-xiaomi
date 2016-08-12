@@ -117,7 +117,7 @@ a:focus {
 
 .oblako {
   position: absolute;
-  background: #fff;
+  background: #F4D33B;
   width: 300px;
   height: 300px;
   padding: 90px 0 0 53px;
@@ -140,7 +140,7 @@ a:focus {
       -ms-flex-align: center;
           align-items: center; }
   .oblako p {
-    color: #2C97DE;
+    color: #3b4952;
     font-size: 32px;
     position: relative;
     z-index: 200;
@@ -177,34 +177,6 @@ a:focus {
           align-items: center;
   width: 100vw;
   height: 100vh; }
-  .section-1:after {
-    content: '';
-    background: -webkit-gradient(linear, left top, left bottom, from(#2C97DE), to(rgba(255, 255, 255, 0.1)));
-    background: -webkit-linear-gradient(#2C97DE, rgba(255, 255, 255, 0.1));
-    background: linear-gradient(#2C97DE, rgba(255, 255, 255, 0.1));
-    width: 170%;
-    height: 80vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 80;
-    -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-            transform: rotate(45deg); }
-  .section-1:before {
-    content: '';
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(#2C97DE));
-    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.1), #2C97DE);
-    background: linear-gradient(rgba(255, 255, 255, 0.1), #2C97DE);
-    width: 200%;
-    height: 80vh;
-    position: absolute;
-    top: 200px;
-    left: -300px;
-    z-index: 80;
-    -webkit-transform: rotate(-145deg);
-        -ms-transform: rotate(-145deg);
-            transform: rotate(-145deg); }
   .section-1 h2 {
     position: relative;
     font-size: 96px;
@@ -252,12 +224,32 @@ a:focus {
   100% {
     bottom: 30px; } }
 
+.why {
+  padding: 100px 0 60px; }
+  .why h2 {
+    margin-bottom: 60px; }
+  .why .why_img {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px; }
+
 .section-2 {
   padding: 60px 0;
   background: #F6F8F8;
   padding-top: 100px; }
   .section-2 h2 {
     margin-bottom: 60px; }
+
+.about_us {
+  padding: 100px 0 60px; }
+  .about_us h2 {
+    margin-bottom: 60px; }
+  .about_us img {
+    width: 100%;
+    height: auto; }
+  .about_us h4 {
+    color: #2C97DE; }
 
 .product {
   background: #fff;
@@ -314,5 +306,54 @@ a:focus {
     transition: .1s;
     font-size: 18px; }
 
+.footer {
+  background: #2C97DE;
+  padding: 12px 0 5px; }
+  .footer .right {
+    text-align: right; }
+  .footer a {
+    color: #fff;
+    -webkit-transition: .2s;
+    transition: .2s; }
+    .footer a:hover {
+      color: #F4D33B; }
+  .footer p {
+    color: #fff; }
+
 #Container .mix {
   display: none; }
+
+#toTop {
+  width: 100px;
+  text-align: center;
+  padding: 10px 20px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  display: none;
+  color: #fff;
+  font-size: 16px;
+  z-index: 9999;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background: #2C97DE;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-family: 'Museo Sans Cyrl', sans-serif;
+  font-weight: 100;
+  font-size: 18px; }
+
+.modal-content {
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  background: url("../img/call.jpg") center center;
+  background-size: cover;
+  position: relative;
+  border: 0;
+  min-height: 300px;
+  min-width: 700px; }
+  .modal-content h4 {
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }

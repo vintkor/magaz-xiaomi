@@ -34,7 +34,9 @@
     <div class="row">
     <div class="flex-center">
       <div class="col-md-3">
-        <img src="http://placehold.it/170x70" alt="">
+        <a href="/">
+          <img src="http://placehold.it/170x70" alt="">
+        </a>
       </div>
       <div class="col-md-6">
         <h1>СУПЕР СЛОГАН</h1>
@@ -49,8 +51,6 @@
     </div>
   </div>
 </div>
-
-<div id="fullpage">
 
 <div class="oblako"><p>Цену<br>снижено на<br><span>8%</span></p></div>
 
@@ -71,7 +71,32 @@
         </g>
       </g>
       </svg>
-      <a href="#section-2"></a>
+      <a href="#why"></a>
+    </div>
+  </div>
+</div>
+
+<div id="why" class="why">
+  <div class="container">
+    <div class="row">
+      <h2>Оставайтесь всегда на связи</h2> 
+      <img class="why_img" src="img/why.png" alt="">
+      <div class="col-md-3">
+        <h3>Lorem ipsum.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure exercitationem obcaecati ipsam consectetur cupiditate voluptates ab atque, temporibus ullam asperiores.</p>
+      </div>
+      <div class="col-md-3">
+        <h3>Lorem ipsum.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore autem quasi reiciendis ex quidem? Illum quam alias unde, ab neque!</p>
+      </div>
+      <div class="col-md-3">
+        <h3>Lorem ipsum.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic facere aliquid id ex necessitatibus reprehenderit, vitae officia dolor ipsum, veniam.</p>
+      </div>
+      <div class="col-md-3">
+        <h3>Lorem ipsum.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, tempore fuga hic? Officiis dicta nesciunt aliquam dolor possimus, recusandae eligendi.</p>
+      </div>
     </div>
   </div>
 </div>
@@ -84,39 +109,39 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-3">
-        <div class="">
-          <h4>Сортировка по Цене</h4>
-            <form>
-              <div>
-                <input class="sort" type="radio" id="up" name="sort" data-sort="my-order:desc">
-                <label for="up">Сначала дорогие</label>
-              </div>
-              <div>
-                <input class="sort" type="radio" id="down" name="sort" data-sort="my-order:asc">
-                <label for="down">Сначала дешовые</label>
-              </div>
-            </form>
-          <h4>Сортировка по типу</h4>
-            <form>
-              <div>
-                <input class="filter" data-filter=".category-1, .category-2" type="radio" id="1" name="sort">
-                <label for="1">Все</label>
-              </div>
-              <div>
-                <input class="filter" data-filter=".category-1" type="radio" id="2" name="sort">
-                <label for="2">Обычный</label>
-              </div>
-              <div>
-                <input class="filter" data-filter=".category-2" type="radio" id="3" name="sort">
-                <label for="3">С солнесным элементом</label>
-              </div>
-            </form>
-        </div>
+      <div class="col-md-6">
+        <form class="form-1">
+          <div>
+            <input class="sort" type="radio" id="up" name="sort" data-sort="my-order:desc">
+            <label for="up">Сначала дорогие</label>
+          </div>
+          <div>
+            <input class="sort" type="radio" id="down" name="sort" data-sort="my-order:asc">
+            <label for="down">Сначала дешовые</label>
+          </div>
+        </form>
       </div>
-      <div class="col-md-9">
+      <div class="col-md-6">
+        <form class="form-2">
+          <div>
+            <input class="filter" data-filter=".category-1, .category-2" type="radio" id="1" name="sort">
+            <label for="1">Все</label>
+          </div>
+          <div>
+            <input class="filter" data-filter=".category-1" type="radio" id="2" name="sort">
+            <label for="2">Обычный</label>
+          </div>
+          <div>
+            <input class="filter" data-filter=".category-2" type="radio" id="3" name="sort">
+            <label for="3">С солнесным элементом</label>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
         <div class="row" id="Container">
-          <div class="col-md-4 mix category-1" data-my-order="103.35">
+          <div class="col-md-3 mix category-1" data-my-order="103.35">
             <div class="absolute">
               <div class="product">
                 <h3>sfsdfsdfsdf</h3>
@@ -156,7 +181,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mix category-2" data-my-order="198.99">
+          <div class="col-md-3 mix category-2" data-my-order="198.99">
             <div class="absolute">
               <div class="product">
                 <h3>sfsdfsdfsdf</h3>
@@ -196,7 +221,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mix category-1" data-my-order="78.39">
+          <div class="col-md-3 mix category-1" data-my-order="78.39">
             <div class="absolute">
               <div class="product">
                 <h3>sfsdfsdfsdf</h3>
@@ -236,7 +261,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mix category-1" data-my-order="306.45">
+          <div class="col-md-3 mix category-1" data-my-order="306.45">
             <div class="absolute">
               <div class="product">
                 <h3>sfsdfsdfsdf</h3>
@@ -276,7 +301,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mix category-2" data-my-order="789.23">
+          <div class="col-md-3 mix category-2" data-my-order="789.23">
             <div class="absolute">
               <div class="product">
                 <h3>sfsdfsdfsdf</h3>
@@ -316,7 +341,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mix category-1" data-my-order="286.45">
+          <div class="col-md-3 mix category-1" data-my-order="286.45">
             <div class="absolute">
               <div class="product">
                 <h3>sfsdfsdfsdf</h3>
@@ -356,12 +381,135 @@
               </div>
             </div>
           </div>
-        </div>      
+          <div class="col-md-3 mix category-2" data-my-order="486.45">
+            <div class="absolute">
+              <div class="product">
+                <h3>sfsdfsdfsdf</h3>
+                <img src="img/header.jpg" alt="">
+                <div class="hover-content">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th colspan="2">Характеристики</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Бла бла бла</td>
+                        <td>125</td>
+                      </tr>
+                      <tr>
+                        <td>Бла бла бла</td>
+                        <td>234</td>
+                      </tr>
+                      <tr>
+                        <td>Бла бла бла</td>
+                        <td>234</td>
+                      </tr>
+                      <tr>
+                        <td>Бла бла бла</td>
+                        <td>234</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="price">486.45 <span>грн.</span></div>
+                <form class="ajaxform" method="POST">
+                  <input type="hidden" name="model" value="model-7" class="model">
+                  <input  data-toggle="modal" data-target="#myModal" type="submit" value="Заказать" name="order" class="submit">
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mix category-2" data-my-order="206.45">
+            <div class="absolute">
+              <div class="product">
+                <h3>sfsdfsdfsdf</h3>
+                <img src="img/header.jpg" alt="">
+                <div class="hover-content">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th colspan="2">Характеристики</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Бла бла бла</td>
+                        <td>125</td>
+                      </tr>
+                      <tr>
+                        <td>Бла бла бла</td>
+                        <td>234</td>
+                      </tr>
+                      <tr>
+                        <td>Бла бла бла</td>
+                        <td>234</td>
+                      </tr>
+                      <tr>
+                        <td>Бла бла бла</td>
+                        <td>234</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="price">206.45 <span>грн.</span></div>
+                <form class="ajaxform" method="POST">
+                  <input type="hidden" name="model" value="model-8" class="model">
+                  <input  data-toggle="modal" data-target="#myModal" type="submit" value="Заказать" name="order" class="submit">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
+<div class="about_us">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Отзывы наших клиентов</h2>
+        <div class="row">
+          <div class="col-md-3">
+            <img src="//placehold.it/250x250" alt="">
+            <h4>Lorem ipsum.</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque assumenda qui adipisci at, dolore voluptates quis neque maxime ratione modi.</p>
+          </div>
+          <div class="col-md-3">
+            <img src="//placehold.it/250x250" alt="">
+            <h4>Lorem ipsum.</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor iusto voluptates sint suscipit ipsam, hic. Recusandae architecto maiores ipsum explicabo.</p>
+          </div>
+          <div class="col-md-3">
+            <img src="//placehold.it/250x250" alt="">
+            <h4>Lorem ipsum.</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam voluptatem natus fugiat officia praesentium sapiente dolorum eligendi? Sunt, asperiores, odio.</p>
+          </div>
+          <div class="col-md-3">
+            <img src="//placehold.it/250x250" alt="">
+            <h4>Lorem ipsum.</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam maxime fugit voluptas est odio illo, magni error blanditiis eum nam?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 left">
+        <p>Copyright &copy; 2016</p>
+      </div>
+      <div class="col-md-6 right">
+        <p>Creating by <a href="//mediaone.in.ua" target="_blank">Media One</a></p>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- ____________________________Modal____________________________ -->
@@ -387,6 +535,8 @@
   </div>
 </div>
 <!-- ____________________________END Modal____________________________ -->
+
+<div id="toTop"> &uarr; Наверх </div>
 
 <script src="js/libs.min.js"></script>
 <!-- build:js -->

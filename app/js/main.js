@@ -1,6 +1,10 @@
-/*-------------------------------- Плавная анимация по меню ---------------------------------*/
  
 $(document).ready(function(){
+
+
+	
+	/*-------------------------------- Плавная анимация по меню ---------------------------------*/
+
 	$(".bounce").on("click","a", function (event) {
 		//отменяем стандартную обработку нажатия по ссылке
 		event.preventDefault();
@@ -14,11 +18,9 @@ $(document).ready(function(){
 		//анимируем переход на расстояние - top за 1500 мс
 		$('body,html').animate({scrollTop: top}, 800);
 	});
-});
 
-/*------------------------------- Отправка почты ---------------------------------*/
+	/*------------------------------- Получение JSON с отправленных данных -----------------------------*/
 
-$(document).ready(function (){
 	$(".ajaxform").submit(function(){
 		var form = $(this);
 		var error = false;
@@ -28,21 +30,36 @@ $(document).ready(function (){
 				console.log(returneData);
 			}
 			$.ajax({
-				type: 'POST', 
+				type: 'POST',
 				url: 'mailto.php',
 				dataType: 'json',
-				data: data, 
+				data: data,
 				success: function(data) {
 					var model = data.value;
 					$('#hidden-jquery').val(model);
 				}
 			});
 		}
-		return false; 
+		return false;
 	});
 
 	$(function(){
 	    $('#Container').mixItUp();
 	});
+
+	/*------------------------------- Button to TOP -----------------------------*/
+
+	$(function() { 
+	  $(window).scroll(function() {   
+	    if($(this).scrollTop() != 0) {     
+	      $('#toTop').fadeIn();     
+	    } else {     
+	      $('#toTop').fadeOut();   
+	    }   
+	  });   
+	  $('#toTop').click(function() {   
+	    $('body,html').animate({scrollTop:0},800);   
+	  }); 
+	});   
 
 });

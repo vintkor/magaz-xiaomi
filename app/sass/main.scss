@@ -74,7 +74,7 @@ a:focus {
 
 .oblako {
 	position: absolute;
-	background: $white;
+	background: $yellow;
 	width: 300px;
 	height: 300px;
 	padding: 90px 0 0 53px;
@@ -88,7 +88,7 @@ a:focus {
 	text-align: center;
 	align-items: center;
 	p {
-		color: $blue;
+		color: #3b4952;
 		font-size: $font-size * 2;
 		position: relative;
 		z-index: 200;
@@ -121,30 +121,6 @@ a:focus {
 	align-items: center;
 	width: 100vw;
 	height: 100vh;
-
-	&:after {
-		content: '';
-		background: linear-gradient($blue, rgba(255,255,255,.1));
-		width: 170%;
-		height: 80vh;
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: 80;
-		transform: rotate(45deg);
-	}
-
-	&:before {
-		content: '';
-		background: linear-gradient(rgba(255,255,255,.1), $blue);
-		width: 200%;
-		height: 80vh;
-		position: absolute;
-		top: 200px;
-		left: -300px;
-		z-index: 80;
-		transform: rotate(-145deg);
-	}
 
 	h2 {
 		position: relative;
@@ -202,6 +178,21 @@ a:focus {
 	100% {bottom: 30px}
 }
 
+.why{
+	padding: 100px 0 60px;
+
+	h2{
+		margin-bottom: 60px;
+	}
+
+	.why_img {
+		position: relative;
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+}
+
 .section-2 {
 	padding: 60px 0;
 	background: #F6F8F8;
@@ -209,6 +200,20 @@ a:focus {
 
 	h2 {
 		margin-bottom: 60px;
+	}
+}
+
+.about_us {
+	padding: 100px 0 60px;
+	h2{
+		margin-bottom: 60px;
+	}
+	img {
+		width: 100%;
+		height: auto;
+	}
+	h4 {
+		color: $blue;
 	}
 }
 
@@ -295,7 +300,60 @@ a:focus {
 	}
 }
 
+.footer {
+	background: $blue;
+	padding: 12px 0 5px;
+	.right {
+		text-align: right;
+	}
+	a {
+		color: $white;
+		transition: .2s;
+		&:hover {
+			color: $yellow;
+		}
+	}
+	p {
+		color: $white;
+	}
+}
+
 
 #Container .mix{
     display: none;
+}
+
+#toTop {
+	width:100px;
+	text-align:center;
+	padding: 10px 20px;
+	position:fixed;
+	bottom:20px;
+	right:20px;
+	cursor:pointer;
+	display:none;
+	color:$white;
+	font-size:16px;
+	z-index: 9999;
+	border-radius: 3px;
+	background: $blue;
+	box-shadow: 0 0 10px rgba($black, .3);
+	font-family: 'Museo Sans Cyrl', sans-serif;
+	font-weight: 100;
+	font-size: 18px;
+}
+
+.modal-content {
+	border-radius: 0;
+	background: url('../img/call.jpg') center center;
+	background-size: cover;
+	position: relative;
+	border: 0;
+	min-height: 300px;
+	min-width: 700px;
+	h4 {
+		color: $white;
+		font-weight: 700;
+		text-shadow: 1px 1px 1px rgba($black, .5);
+	}
 }
