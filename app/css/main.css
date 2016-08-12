@@ -162,6 +162,13 @@ a:focus {
     bottom: -150px;
     left: -260px; }
 
+img.socket {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: auto; }
+
 .section-1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -175,6 +182,12 @@ a:focus {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
   width: 100vw;
   height: 100vh; }
   .section-1 h2 {
@@ -182,21 +195,10 @@ a:focus {
     font-size: 96px;
     color: #fff;
     padding: .5em 1em;
-    border-bottom: 3px solid rgba(255, 255, 255, 0.6); }
+    width: 100%; }
     .section-1 h2 small {
       color: inherit;
       font-size: 48px; }
-    .section-1 h2:after {
-      content: "";
-      position: absolute;
-      bottom: -13px;
-      left: 50%;
-      margin-left: -10px;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 10px 10px 0 10px;
-      border-color: rgba(255, 255, 255, 0.6) transparent transparent transparent; }
   .section-1 .bounce {
     position: absolute;
     bottom: 30px;
