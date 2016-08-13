@@ -62,4 +62,34 @@ $(document).ready(function(){
 	  }); 
 	});   
 
+	/*------------------------------- Маска для поля номера телефона -----------------------------*/
+	jQuery(function($){
+	    $("#number").mask("8 (999) 999-99-99");
+	});
+
+
+	/*------------------------------- Owl.Carousel -----------------------------*/
+
+	$(".owl-carousel").owlCarousel({
+		loop:true,
+		margin:20,
+		lazyLoad:true,
+		autoplay:true,
+	    autoplayTimeout:2000,
+	    autoplayHoverPause:true,
+	    nav:true,
+	    navText: [ '&larr;', '&rarr;' ],
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:4
+            }
+        }
+	});
+
 });

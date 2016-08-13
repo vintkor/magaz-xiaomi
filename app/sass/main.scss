@@ -142,6 +142,7 @@ img.socket {
 		small {
 			color: inherit;
 			font-size: $font-size * 3;
+			color: $yellow;
 		}
 	}
 
@@ -202,14 +203,33 @@ img.socket {
 
 .about_us {
 	padding: 100px 0 60px;
+	background: #F6F8F8;
 	h2{
 		margin-bottom: 60px;
 	}
 	img {
 		width: 100%;
 		height: auto;
+		border-radius: 50%;
+		border: 5px solid darken($white, 10%);
+		padding: 5px;
 	}
 	h4 {
+		color: $blue;
+	}
+	.owl-prev,
+	.owl-next {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background: $blue;
+	}
+}
+
+.how_we_work {
+	padding: 60px 0;
+	padding-top: 100px;
+	h3 {
 		color: $blue;
 	}
 }
@@ -331,7 +351,7 @@ img.socket {
 	display:none;
 	color:$white;
 	font-size:16px;
-	z-index: 9999;
+	z-index: 100;
 	border-radius: 3px;
 	background: $blue;
 	box-shadow: 0 0 10px rgba($black, .3);
@@ -342,15 +362,45 @@ img.socket {
 
 .modal-content {
 	border-radius: 0;
-	background: url('../img/call.jpg') center center;
-	background-size: cover;
+	background: $blue;
 	position: relative;
-	border: 0;
-	min-height: 300px;
-	min-width: 700px;
+	text-align: center;
 	h4 {
 		color: $white;
-		font-weight: 700;
-		text-shadow: 1px 1px 1px rgba($black, .5);
+		font-weight: 500;
 	}
+	p {
+		color: darken($white, 5%);
+		font-size: $font-size + 1px;
+		padding: 10px;
+	}
+	input {
+		border: 0;
+		width: 50%;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	input[type="text"] {
+		font-size: $font-size + 4px;
+		padding: 7px 10px;
+	}
+	input[type="submit"] {
+		font-size: $font-size + 4px;
+		padding: 7px 10px;
+		transition: .2s;
+		font-family: 'PT Sans', sans-serif;
+		&:hover {
+			background: $yellow;
+		}
+	}
+	.modal-header {
+		border-bottom: 1px solid lighten($blue, 10%);
+	}
+	.modal-body {
+		border-top: 1px solid darken($blue, 10%);
+	}
+}
+
+.modal-dialog {
+	margin: 20vh auto;
 }

@@ -198,7 +198,8 @@ img.socket {
     width: 100%; }
     .section-1 h2 small {
       color: inherit;
-      font-size: 48px; }
+      font-size: 48px;
+      color: #F4D33B; }
   .section-1 .bounce {
     position: absolute;
     bottom: 30px;
@@ -244,13 +245,30 @@ img.socket {
     margin-bottom: 60px; }
 
 .about_us {
-  padding: 100px 0 60px; }
+  padding: 100px 0 60px;
+  background: #F6F8F8; }
   .about_us h2 {
     margin-bottom: 60px; }
   .about_us img {
     width: 100%;
-    height: auto; }
+    height: auto;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    border: 5px solid #e6e6e6;
+    padding: 5px; }
   .about_us h4 {
+    color: #2C97DE; }
+  .about_us .owl-prev,
+  .about_us .owl-next {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #2C97DE; }
+
+.how_we_work {
+  padding: 60px 0;
+  padding-top: 100px; }
+  .how_we_work h3 {
     color: #2C97DE; }
 
 .product {
@@ -336,7 +354,7 @@ img.socket {
   display: none;
   color: #fff;
   font-size: 16px;
-  z-index: 9999;
+  z-index: 100;
   -webkit-border-radius: 3px;
           border-radius: 3px;
   background: #2C97DE;
@@ -349,13 +367,36 @@ img.socket {
 .modal-content {
   -webkit-border-radius: 0;
           border-radius: 0;
-  background: url("../img/call.jpg") center center;
-  background-size: cover;
+  background: #2C97DE;
   position: relative;
-  border: 0;
-  min-height: 300px;
-  min-width: 700px; }
+  text-align: center; }
   .modal-content h4 {
     color: #fff;
-    font-weight: 700;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
+    font-weight: 500; }
+  .modal-content p {
+    color: #f2f2f2;
+    font-size: 17px;
+    padding: 10px; }
+  .modal-content input {
+    border: 0;
+    width: 50%;
+    margin-bottom: 10px;
+    text-align: center; }
+  .modal-content input[type="text"] {
+    font-size: 20px;
+    padding: 7px 10px; }
+  .modal-content input[type="submit"] {
+    font-size: 20px;
+    padding: 7px 10px;
+    -webkit-transition: .2s;
+    transition: .2s;
+    font-family: 'PT Sans', sans-serif; }
+    .modal-content input[type="submit"]:hover {
+      background: #F4D33B; }
+  .modal-content .modal-header {
+    border-bottom: 1px solid #58ade5; }
+  .modal-content .modal-body {
+    border-top: 1px solid #1d7bba; }
+
+.modal-dialog {
+  margin: 20vh auto; }
