@@ -328,6 +328,53 @@ img.socket {
 	}
 }
 
+// Стилизация Radio
+
+.radio {
+	vertical-align: top;
+	width: 17px;
+	height: 17px;
+	margin: 0 3px 0 0;
+}
+.radio + label {
+	cursor: pointer;
+}
+.radio:not(checked) {
+	position: absolute;
+	opacity: 0;
+}
+.radio:not(checked) + label {
+	position: relative;
+	padding: 0 0 0 35px;
+}
+.radio:not(checked) + label:before {
+	content: '';
+	position: absolute;
+	top: -3px;
+	left: 0;
+	width: 22px;
+	height: 22px;
+	border: 1px solid darken($white, 20%);
+	border-radius: 50%;
+	background: $white;
+}
+.radio:not(checked) + label:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 3px;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: lighten($green, 15%);
+	box-shadow: inset 0 1px 2px rgba($black, .5);
+	opacity: 0;
+	transition: all .2s;
+}
+.radio:checked + label:after {
+	opacity: 1;
+}
+
 .footer {
 	background: $blue;
 	padding: 12px 0 5px;
@@ -335,10 +382,10 @@ img.socket {
 		text-align: right;
 	}
 	a {
-		color: $white;
+		color: $yellow;
 		transition: .2s;
 		&:hover {
-			color: $yellow;
+			color: $white;
 		}
 	}
 	p {
