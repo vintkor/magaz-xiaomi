@@ -12,7 +12,7 @@
    id="svg3438"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="down.svg">
+   sodipodi:docname="down-right.svg">
   <metadata
      id="metadata3463">
     <rdf:RDF>
@@ -62,7 +62,7 @@
        id="title3445">Layer 1</title>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#f99d00;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:12, 6;stroke-dashoffset:12.30000019;stroke-opacity:1;marker-end:url(#TriangleOutM)"
-       d="M 847.89189,233.42539 C 809.15553,325.19076 440.88381,202.76523 400.94125,290.99395"
+       d="m 397.53422,233.42539 c 38.73636,91.76537 407.00808,-30.66016 446.95064,57.56856"
        id="path4267"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />

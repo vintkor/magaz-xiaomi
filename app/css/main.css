@@ -270,6 +270,14 @@ img.socket {
   padding-top: 100px; }
   .how_we_work h3 {
     color: #2C97DE; }
+  .how_we_work .line-left {
+    width: 80%;
+    margin: 0 auto; }
+    .how_we_work .line-left img {
+      width: 100%;
+      height: auto; }
+  .how_we_work .col-md-3 {
+    padding: 20px; }
 
 .product {
   background: #fff;
