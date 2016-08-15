@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-
-
     /*-------------------------------- Плавная анимация по меню ---------------------------------*/
 
     $(".bounce").on("click", "a", function(event) {
@@ -88,8 +86,11 @@ $(document).ready(function() {
             0: {
                 items: 1
             },
-            600: {
+            400: {
                 items: 2
+            },
+            600: {
+                items: 3
             },
             1000: {
                 items: 4
@@ -128,6 +129,5 @@ $(document).ready(function() {
         }
         return false; // вырубаем стандартную отправку формы
     });
-
 
 });
