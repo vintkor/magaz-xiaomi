@@ -144,7 +144,7 @@ a:focus {
     font-size: 32px;
     position: relative;
     z-index: 200;
-    font-family: 'Museo Sans Cyrl';
+    font-family: 'Museo Sans Cyrl', sans-serif;
     font-weight: 700; }
     .oblako p span {
       font-size: 48px;
