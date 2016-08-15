@@ -574,16 +574,16 @@
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Название модали</h4>
-      </div>
       <div class="modal-body">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error illo veniam tempore, velit sequi, adipisci maxime. Id earum quo beatae.</p>
-        <form>
-          <input  type="hidden" value="">
-          <input id="number" type="text" placeholder="Ваш номер телефона">
-          <input id="hidden-jquery" type="submit" value="Позвонить мне">
+        <h4>Вы заказываете </h4>
+        <input class="hidden-jquery hidden-query-style" type="text" value="" disabled="disabled">
+        <p>
+          Для подтверждения Вашего заказа и уточнения адреса доставки, введите Ваш номер телефона.
+        </p>
+        <form id="ajaxform" method="post">
+          <input class="hidden-jquery" name="model" type="hidden" value="">
+          <input id="number" name="number" type="text" placeholder="Ваш номер телефона">
+          <input type="submit" value="Позвонить мне">
         </form>
       </div>
     </div>

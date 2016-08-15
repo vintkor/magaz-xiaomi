@@ -449,6 +449,12 @@ img.socket {
     font-family: 'PT Sans', sans-serif; }
     .modal-content input[type="submit"]:hover {
       background: #F4D33B; }
+  .modal-content input.hidden-query-style {
+    background: #2C97DE;
+    color: #F4D33B;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700; }
   .modal-content .modal-header {
     border-bottom: 1px solid #58ade5; }
   .modal-content .modal-body {

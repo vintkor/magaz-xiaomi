@@ -451,6 +451,13 @@ img.socket {
 			background: $yellow;
 		}
 	}
+	input.hidden-query-style {
+		background: $blue;
+		color: $yellow;
+		font-size: $font-size + 2px;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
 	.modal-header {
 		border-bottom: 1px solid lighten($blue, 10%);
 	}
