@@ -5,4 +5,4 @@
 		$json = '{"value": "' . $test	. '"}';
 	}
 
-	echo $json;
+	echo $json;	

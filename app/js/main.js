@@ -43,6 +43,8 @@ $(document).ready(function() {
         return false;
     });
 
+    /*------------------------------- Фильтрация продуктов ----------------------*/
+
     $(function() {
         $('#Container').mixItUp();
     });

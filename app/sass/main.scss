@@ -80,7 +80,6 @@ a:focus {
 	padding: 90px 0 0 53px;
 	top: -80px;
 	right: -80px;
-	z-index: 30;
 	border-radius: 50%;
 	z-index: 90;
 	transform: rotate(45deg);
@@ -141,7 +140,6 @@ img.socket {
 		width: 100%;
 
 		small {
-			color: inherit;
 			font-size: $font-size * 3;
 			color: $yellow;
 		}
@@ -171,7 +169,7 @@ img.socket {
 	}
 }
 
-@keyframe bounce {
+@keyframes bounce {
 	0% {bottom: 30px}
 	50% {bottom: 60px}
 	100% {bottom: 30px}
@@ -187,15 +185,13 @@ img.socket {
 	.why_img {
 		position: relative;
 		display: block;
-		margin: 0 auto;
-		margin-bottom: 30px;
+		margin: 0 auto 30px;
 	}
 }
 
 .section-2 {
-	padding: 60px 0;
+	padding: 100px 0 60px;
 	background: #F6F8F8;
-	padding-top: 100px;
 
 	h2 {
 		margin-bottom: 60px;
@@ -228,8 +224,7 @@ img.socket {
 }
 
 .how_we_work {
-	padding: 60px 0;
-	padding-top: 100px;
+	padding: 100px 0 60px;
 	h3 {
 		color: $blue;
 	}
@@ -412,7 +407,6 @@ img.socket {
 	cursor: pointer;
 	display: none;
 	color: $white;
-	font-size: 16px;
 	z-index: 100;
 	border-radius: 3px;
 	background: $blue;
