@@ -14,7 +14,7 @@ class Database
     private $charset;
     private $dsn;
     private $opt;
-    private $pdo;
+    protected $pdo;
 
     public function __construct()
     {
